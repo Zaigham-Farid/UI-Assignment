@@ -28,12 +28,18 @@ body {
 }
 
 .baner {
-  float: right;
+  top: 0px;
+  right: 0px;
+  position:absolute;
+  z-index: -10;
 
 }
 
 .navbar-nav>li {
   margin: 0px 10px;
+}
+.navbar-nav{
+  margin: 0px 30vw;
 }
 
 background-text {
@@ -118,11 +124,8 @@ background-text {
 }
 
 .flex-container-background {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 250px;
+
+    margin-bottom: 250px;
 }
 
 .flex-container {
@@ -135,7 +138,7 @@ background-text {
 
 
 .flex-container-background>div {
-  margin: 80px;
+  margin: 60px;
   background: #F26957;
 
 }
@@ -284,76 +287,12 @@ background-text {
   padding-top: 50px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+
   .flex-container-background {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
 
-  .flex-container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
 
-  }
-
-  .footer-main-text {
-    margin-top: 50px;
-    text-align: center;
-    color: white;
-  }
-
-  .horizontal-line {
-    width: 88%;
-    margin-left: 2.2vh;
-  }
-
-  .footer-last-section {
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  .textboxdesign {
-    border: 1px solid grey;
-    border-radius: 4px;
-    color: #777;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 50px;
-    font-size: 14px;
-    border: 1px solid #eee;
-    background-color: #f7f7f7;
-    margin-bottom: 30px;
-
-  }
-
-  .card-footer-margin {
-    margin: 30px 30px 0px 30px;
-  }
-
-  .formdesign {
-    background-color: white;
-    border-radius: 5px;
-    height: 450px;
-    width: 500px;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
-
-  }
-
-  .mainmargin {
-    margin-top: 300px;
-    margin-bottom: 50px;
-  }
-
-  .form-align {
-    display: flex;
-    justify-content: center;
-  }
-
+}
   .lastsectionmargin {
     padding-top: 220px;
   }
@@ -393,3 +332,68 @@ background-text {
   }
 
 }
+
+@media (max-width: 991px){
+  .footer-main-text {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+  }
+
+  .horizontal-line {
+    width: 88%;
+    margin-left: 2.2vh;
+  }
+
+  .footer-last-section {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .form-align {
+    display: flex;
+    justify-content: center;
+  }
+  .textboxdesign {
+    border: 1px solid grey;
+    border-radius: 4px;
+    color: #777;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    font-size: 14px;
+    border: 1px solid #eee;
+    background-color: #f7f7f7;
+    margin-bottom: 30px;
+
+  }
+
+  .card-footer-margin {
+    margin: 30px 30px 0px 30px;
+  }
+
+  .formdesign {
+    background-color: white;
+    border-radius: 5px;
+    height: 450px;
+    width: 500px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+
+  }
+
+}
+@media (max-width: 991px){
+
+  .mainmargin {
+    margin-top: 90vw;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 576px){
+  .testominal-padding{
+    padding: 20vw;
+  }
+}
+
